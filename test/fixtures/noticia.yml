@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+Nt1:
+  title: Noticia Fat
+  fecha: 2022-08-20
+  description: La noticia
+
+Nt2:
+  title: Segunda Noticia
+  fecha: 2022-08-20
+  description: Algo de fallo

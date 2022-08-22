@@ -1,0 +1,8 @@
+<h1> Noticias </h1>
+<% @principals.each do |noticia| %>
+  <%= link_to noticia_path(noticia.id) do %>
+    <h2><%= noticia.title %></h2>
+    <h2><%= noticia.fecha %></h2>
+    
+  <% end %>
+<% end %>

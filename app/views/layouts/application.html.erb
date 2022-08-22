@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Noticiero</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <nav class='navbar'>
+         <div class='navbar-inner'>
+          <ul class='nav'>
+            <li><%= link_to 'Inicio', principals_path %></li>
+            
+            <li><%= link_to 'Ultimas', principals_path %></li>
+            <li><%= link_to 'Actualidad', principals_path %></li>
+            <li><%= link_to 'Economia', principals_path %></li>
+            <li><%= link_to 'Deportes', principals_path %></li>
+            <li><%= link_to 'Iniciar sescion', principals_path %></li>
+            <button> Iniciar Sesion</button>
+            <li>
+            <form>
+    <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label class="form-check-label"><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+            </li>
+
+          </ul>
+        </div> 
+  </nav>
+
+  <%= render 'shared/header' %>
+    
+    <%= yield %>
+  </body>
+</html>
